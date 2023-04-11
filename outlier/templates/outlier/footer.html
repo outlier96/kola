@@ -1,0 +1,93 @@
+{% load static %}
+<footer class="main-footer">
+  <div class="main-container">
+    <div class="main-footer__upper">
+      <div class="main-footer__row main-footer__row-1">
+        <h2 class="heading heading-sm main-footer__heading-sm">
+          <span>Social</span>
+        </h2>
+        <div class="main-footer__social-cont">
+          <a target="_blank" rel="noreferrer" href="www.linkedin.com/in/abubakar-awode-kolawole-6a2801a3">
+            <img
+              class="main-footer__icon"
+              src="{% static './images/png/linkedin-ico.png' %}"
+              alt="icon"
+            />
+          </a>
+          <a target="_blank" rel="noreferrer" href="#">
+            <img
+              class="main-footer__icon"
+              src="{% static './images/png/github-ico.png' %}"
+              alt="icon"
+            />
+          </a>
+          <a target="_blank" rel="noreferrer" href="https://twitter.com/Awode_x/">
+            <img
+              class="main-footer__icon"
+              src="{% static './images/png/twitter-ico.png'%}"
+              alt="icon"
+            />
+          </a>
+          <a target="_blank" rel="noreferrer" href="#">
+            <img
+              class="main-footer__icon"
+              src="{% static './images/png/yt-ico.png' %}"
+              alt="icon"
+            />
+          </a>
+          <a target="_blank" rel="noreferrer" href="#">
+            <img
+              class="main-footer__icon main-footer__icon--mr-none"
+              src="{% static './images/png/insta-ico.png' %}"
+              alt="icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="main-footer__row main-footer__row-2">
+        <h4 class="heading heading-sm text-lt">John Doe</h4>
+        <p class="main-footer__short-desc">
+          <a href="Tel:+2349033443789">Tel:+2349033443789</a>  <br>
+         <a href="mailto:abubakarawode@gmail.com"> Email:abubakarawode@gmail.com</a>
+          <address> <a href="http://maps.google"></a> B4 kurudu post Army Housing estate phase 5 FCT Abuja</address>
+        </p>
+      </div>
+      <div class="subscription">
+        <form action="" method="POST">
+          {% csrf_token %}
+
+          <h3 class="heading heading-sm text-lt">JOIN ME</h3>
+          <p class="main-footer__short-desc">Get updates about new Projects,Developments and Offers.</p>     
+          {% if messages %}
+          <ul class="ul">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{message.tags}}"{% endif %}>{{message}}</li>
+            {% endfor %}
+            </ul> 
+            {% endif %}
+            <div class="contact__form-field">
+          
+            <input
+              required
+              placeholder="Enter Your Email"
+              type="email"
+              class="contact__form-input"
+              name="subscriber"
+              id="subscriber"
+            />
+          </div>
+          <button type="submit"  class="btn btn--med btn--theme dynamicBgClr"
+          target="_blank"  >Join</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+    <div class="main-footer__lower">
+      &copy; Copyright 2021. Made by
+      <a rel="noreferrer" target="_blank" href="https://"></a>
+    </div>
+  </div>
+</footer>
+
+

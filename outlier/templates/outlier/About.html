@@ -1,0 +1,45 @@
+{% extends 'outlier/main.html' %}
+{% load static %}
+
+<title>Dexdev-About</title>
+{% block content %}
+{% include 'outlier/navbar.html' %}
+<section id="contact" class="contact sec-pad dynamicBg">
+  <div class="main-container" style="background-color: aliceblue;">
+  <center>
+        <h1 class="heading-primary">Hey, My name is Abubakar Awode</h1>
+        
+          <p class="about__content-details-para">
+            
+            I'm a <strong> Django web developer, Digital Marketer </strong> located in
+            Abuja Nigeria. I've done
+            <strong> remote </strong>
+            projects for agencies, consulted for startups, and collaborated
+            with talented people to create
+            <strong>digital products </strong>
+            for both business and consumer use.
+          </p>
+          <p class="about__content-details-para">
+              My passion for creating user-friendly websites that drive engagement and conversions.
+      
+              I graduated with a Bachelor's degree in Management and Computer Studies and a Diploma in Information Technology, and have since developed a strong skillset in a variety of web development technologies, including Django, WordPress, HTML/CSS, and PHP. I'm also knowledgeable in online SEO and social media marketing, which helps me create websites that are optimized for search engines and social media platforms.
+              
+              One of the things I love most about web development is the challenge of taking an idea and turning it into a fully functional website that meets the needs of its users. I enjoy working with clients to identify their goals and needs, and then using my skills to create a website that exceeds their expectations.
+              
+              When I'm not coding, you can find me exploring new restaurants, playing video games, or hiking in the great outdoors. I believe that maintaining a healthy work-life balance is essential for success in both personal and professional endeavors.
+              
+              If you're looking for a web developer and digital marketer who is dedicated to creating high-quality websites that drive results, I'd love to chat with you.
+              <br>
+               Feel free to contact me at  <a href="mailto:abubakarawode@gmail.com"> abubakarawode@gmail.com</a> to learn more about my skills and experience.
+        
+          </p>
+    
+      <center><a href="{% url 'contact' %}" class="btn btn--med btn--theme dynamicBgClr"
+        >Contact</a></center>
+    </center>
+  </div>
+</section>
+{% endblock content %}
+   
+
+    
